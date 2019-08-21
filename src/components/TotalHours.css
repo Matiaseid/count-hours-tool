@@ -1,0 +1,9 @@
+
+#TotalHours {
+
+    padding: 16px 12px 10px 12px;
+
+    font-family: Consolas, monospace;
+    color: var(--main-text-color);
+    font-size: 22px;
+}

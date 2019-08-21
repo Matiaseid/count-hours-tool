@@ -1,5 +1,5 @@
 {
-  "name": "count-hours",
+  "name": "counting-hours-tool",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

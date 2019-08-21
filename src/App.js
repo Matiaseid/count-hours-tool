@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+
+import {HoursInput} from './components/HoursInput';
+import {TotalHours} from './components/TotalHours';
+
 import './App.css';
 
+
 function App() {
+
+  const [timeData, setTimeData] = useState(null);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div id="App">
+
+      <TotalHours timeData={timeData}/>
+
+      <hr style={{
+        width: 'calc(100% - 24px)',
+        border: 0,
+        borderTop: '2px solid #dce5ff',
+        marginBottom: 0,
+        marginTop: 0
+      }}/>
+
+      <HoursInput updateHours={ timeDataInput => {
+        setTimeData(timeDataInput);
+      }}/>
+
     </div>
   );
 }

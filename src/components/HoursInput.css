@@ -1,0 +1,21 @@
+
+#HoursInput {
+
+    width: calc(100% - 24px);
+    height: 100%;
+    margin: 12px 12px 0 12px;
+    padding: 0;
+
+    display: block;
+    resize: none;
+
+    font-family: Consolas, monospace;
+    font-size: 15px;
+
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+
+    outline-style: none;
+    box-shadow: none;
+    border: 0 transparent;
+}

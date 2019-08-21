@@ -20,4 +20,4 @@
 npm-debug.log*
 
 # IDE
-/.idea
+.idea/
